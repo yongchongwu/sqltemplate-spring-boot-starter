@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Template PUBLIC
+	"-//SqlTemplate DTD 1.0//EN"
+	"http://sqltemplate.ycwu.com/sql-template.dtd">
+<Template>
+	<sql-statement id="test_sqltemplate_id" desc="">
+	<![CDATA[
+		 select * from tb_test where dict_id=${param0} <#if username?exists> and username='${username}' </#if> order by id
+	]]>
+	</sql-statement>
+</Template>

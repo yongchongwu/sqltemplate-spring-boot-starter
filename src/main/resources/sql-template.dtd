@@ -1,0 +1,5 @@
+<!ELEMENT Template (sql-statement)*>  
+<!ELEMENT sql-statement (#PCDATA)>  
+<!ATTLIST sql-statement id CDATA #REQUIRED>
+<!ATTLIST sql-statement desc CDATA #IMPLIED>
+<!ATTLIST sql-statement cachable (true|false) "false">
